@@ -1,0 +1,16 @@
+# Логи плагина (создаются при работе)
+logs/
+*.log
+
+# Служебные файлы ОС
+Thumbs.db
+.DS_Store
+desktop.ini
+
+# Временные файлы редакторов
+.vscode/
+.idea/
+*.swp
+
+# Node
+node_modules/
