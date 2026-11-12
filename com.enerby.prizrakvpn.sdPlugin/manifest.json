@@ -1,0 +1,99 @@
+{
+	"Name": "Prizrak-Box VPN",
+	"Description": "Управление VPN Prizrak-Box (ядро mihomo) со стримдека",
+	"Author": "Enerby",
+	"Version": "1.0.0",
+	"Category": "Prizrak-Box VPN",
+	"Icon": "actions/icon",
+	"OS": [
+		{
+			"Platform": "windows"
+		},
+		{
+			"Platform": "mac"
+		},
+		{
+			"Platform": "linux"
+		}
+	],
+	"CodePath": "plugin.cjs",
+	"CodePathWin": "plugin.cjs",
+	"CodePathMac": "plugin.cjs",
+	"CodePathLin": "plugin.cjs",
+	"Actions": [
+		{
+			"UUID": "com.enerby.prizrakvpn.tun",
+			"Name": "VPN тумблер",
+			"Icon": "actions/tun_off",
+			"Tooltip": "Включить или выключить VPN (TUN)",
+			"Controllers": [
+				"Keypad"
+			],
+			"DisableAutomaticStates": true,
+			"States": [
+				{
+					"Image": "actions/tun_off",
+					"Name": "VPN выкл"
+				},
+				{
+					"Image": "actions/tun_on",
+					"Name": "VPN вкл"
+				}
+			]
+		},
+		{
+			"UUID": "com.enerby.prizrakvpn.mode",
+			"Name": "Режим маршрутизации",
+			"Icon": "actions/mode_rule",
+			"Tooltip": "Переключить rule / global / direct",
+			"Controllers": [
+				"Keypad"
+			],
+			"DisableAutomaticStates": true,
+			"States": [
+				{
+					"Image": "actions/mode_rule",
+					"Name": "Rule"
+				},
+				{
+					"Image": "actions/mode_global",
+					"Name": "Global"
+				},
+				{
+					"Image": "actions/mode_direct",
+					"Name": "Direct"
+				}
+			]
+		},
+		{
+			"UUID": "com.enerby.prizrakvpn.group",
+			"Name": "Сервер / группа",
+			"Icon": "actions/group",
+			"Tooltip": "Переключить следующий сервер в группе прокси",
+			"Controllers": [
+				"Keypad"
+			],
+			"DisableAutomaticStates": true,
+			"States": [
+				{
+					"Image": "actions/group"
+				}
+			]
+		},
+		{
+			"UUID": "com.enerby.prizrakvpn.traffic",
+			"Name": "Скорость трафика",
+			"Icon": "actions/traffic",
+			"Tooltip": "Показать скорость загрузки и отдачи",
+			"Controllers": [
+				"Keypad"
+			],
+			"DisableAutomaticStates": true,
+			"States": [
+				{
+					"Image": "actions/traffic"
+				}
+			]
+		}
+	]
+}
